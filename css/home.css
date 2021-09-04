@@ -1,0 +1,257 @@
+/* Main, Navbar - start */
+#main-row {
+    height: 100vh;
+}
+
+.main-col {
+    background: radial-gradient(circle, rgba(62, 62, 86, 1) 0%, rgba(50, 51, 71, 1) 100%);
+    align-items: center !important;
+}
+
+.navbar {
+    background-color: transparent !important;
+}
+
+.navbar-collapse {
+    width: auto;
+}
+
+.login-btn {
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    padding: 0;
+}
+
+.login-btn:hover {
+    color: #fafafa;
+}
+
+.login-btn:focus {
+    box-shadow: none;
+}
+
+.search-box{
+    position: relative;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-box:hover > .search-txt{
+	width: 240px;
+	padding: 0 6px;
+}
+
+.search-box:hover > .search-btn{
+	background: white;
+}
+
+.search-btn{
+    color: radial-gradient(circle, rgba(5,168,242,1) 0%, rgba(43,173,130,1) 100%);
+    text-decoration: none;
+	float: right;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background: #2f3640;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: 0.4s;
+}
+
+.search-txt{
+    border:none;
+    border-bottom: 1px solid #fff;
+	background: none;
+	outline: none;
+	float: left;
+	padding: 0;
+    color: white;
+	font-size: 16px;
+	transition: 0.4s;
+	line-height: 40px;
+	width: 0px;
+}
+/* Main, Navbar - end */
+
+
+
+
+
+/* Content - left/right */
+.main-content {
+    display: flex;
+    align-items: center;
+
+    padding: 0 10%;
+    height: 90%;
+
+    color: #fff;
+}
+
+
+
+
+
+/* left - start */
+.main-content .main-left h2 {
+    margin-bottom: 10%;
+}
+
+.main-content .main-left h5 {
+    margin-bottom: 10%;
+
+    font-weight: lighter;
+}
+
+.main-content .main-left .mleft-icon {
+    margin-top: 10%;
+}
+
+.main-content .main-left .mleft-icon .col-md-4 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.main-content .main-left .mleft-icon .col-md-4 a {
+    transition: all .5s ease-in;
+}
+
+.main-content .main-left .mleft-icon .col-md-4 a:hover h6 {
+    color: rgba(255, 255, 255, .5);
+    transition: all .3s ease-in;
+}
+
+.main-content .main-left .mleft-icon .col-md-4 a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.main-content .main-left .mleft-icon .col-md-4 img {
+    margin-bottom: 10px;
+}
+/* left - end */
+
+
+
+
+
+/* right - start */
+.main-content .main-right {
+    position: relative;
+    overflow: hidden;
+    height: 80%;
+}
+
+#scene {
+    position: relative;
+}
+
+.main-content .main-right [class*="circle-"] {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.main-content .main-right .circle-1 {
+    position: absolute;
+    right: 0;
+    top: 10%;
+    background-image: url(../img/right4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    z-index: 3;
+}
+
+.main-content .main-right .circle-2 {
+    position: absolute;
+    left: 30%;
+    top: 16%;
+    background-image: url(../img/right2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 150px;
+    height: 150px;
+    z-index: 3;
+}
+
+.main-content .main-right .circle-3 {
+    position: absolute;
+    right: 15%;
+    bottom: 0;
+    background-image: url(../img/right3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    z-index: 3;
+}
+
+.main-content .main-right .circle-1shadow {
+    position: absolute;
+    right: -10%;
+    top: 0;
+    height: 300px;
+    width: 300px;
+}
+
+.main-content .main-right .circle-2shadow {
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    height: 200px;
+    width: 200px;
+    transform: translate(30%, -90%);
+}
+
+.main-content .main-right .circle-3shadow {
+    position: absolute;
+    right: -10%;
+    top: 45%;
+    height: 450px;
+    width: 450px;
+}
+
+.main-content .main-right .circle-1dark {
+    position: absolute;
+    top: 0;
+    left: 48%;
+    z-index: 2;
+}
+
+.main-content .main-right .circle-2dark {
+    position: absolute;
+    top: 45%;
+    left: 30%;
+    z-index: 2;
+}
+
+.main-content .main-right .circle-3dark {
+    position: absolute;
+    bottom: 35%;
+    right: 10%;
+    z-index: 2;
+}
+
+.main-content .main-right .circle-1dark,
+.circle-2dark,
+.circle-3dark {
+    background: radial-gradient(circle, rgba(71, 72, 99, 1) 0%, rgba(74, 75, 101, 1) 100%);
+}
+
+.main-content .main-right .circle-1shadow,
+.circle-2shadow,
+.circle-3shadow {
+    border: 1px solid rgba(255, 255, 255, .5);
+}
+/* right - start */

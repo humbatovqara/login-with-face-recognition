@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/pgp.css">
+
+    <!-- Fontawesome CDN -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+
+    <!-- AOS library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link rel="icon" href="../img/navbar-icon2.png" sizes="any" type="image/png">
+
+    <title>SecUP | About Information Security on the Internet</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <!-- Row start - Navbar / Main -->
+        <div id="main-row" class="row">
+            <div class="col py-3 main-col">
+
+                <!-- Navbar start -->
+                <nav id="navbar" class="navbar navbar-expand-md bg-white navbar-dark">
+                    <div class="container">
+                        <a class="navbar-brand" href="../index.html">
+                            <img src="../img/navbar-icon2.png" alt="Navbar icon">
+                            <span>SecUP</span>
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="../index.html">Əsas səhifə</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Protokollar
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="pgp.html">PGP</a></li>
+                                        <li><a class="dropdown-item" href="ssl.html">SSL/TLS</a></li>
+                                        <li><a class="dropdown-item" href="ipsec.html">IPsec</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contact.html">Əlaqə</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="login">
+                            <a href="login.html" class="btn login-btn">Giriş et</a>
+                        </div>
+                    </div>
+                </nav>
+                <!-- Navbar end -->
+
+                <!-- Progress Bar - start -->
+                <progress id="progress" value="0" max="1">
+                    <div class="progress-container">
+                        <span class="progress-bar"></span>
+                    </div>
+                </progress>
+                <!-- Progress Bar - end -->
+
+                <!-- PGP page main Row start -->
+                <div class="row pgp-main">
+                    <div class="col">
+                        <div class="pgp-content">
+                            <h2>PGP protokolu</h2>
+                            <p>
+                                <span class="marker-animation">Pretty Good Privacy (PGP)</span> – yəni “Olduqca Yaxşı
+                                Məxfilik”, 1991-ci ildə Phil Zimmermann
+                                tərəfindən yaradılan, <span class="marker-animation">OpenPGP standartını</span> istifadə
+                                edərək məlumatları şifrələmək,
+                                şifrəli məlumatları açmaq və ya informasiyanı imzalamaq üçün istifadə edilən, göndərilən
+                                və alınan informasiyanın məxfiliyini və identifikasiyasını təsdiqləməyi təmin edən bir
+                                proqramdır. Əsasən <span class="marker-animation">mətn fayllarını, elektron poçtları,
+                                    qovluqları və disk sektorlarını</span>
+                                şifrələmək və imzalamaq üçün istifadə edilir.
+                            </p>
+                            <p>
+                                Ənənəvi şifrələmədə, adi bir mətni şifrələyərək başa düşülməyən hala gətirmək üçün gizli
+                                açardan istifadə olunur. Bu açar eyni zamanda şifrələnmiş mətnin şifrəsinin açılması
+                                üçün də istifadə olunur. Bu tip şifrələmənin <span class="marker-animation">mənfi
+                                    xüsusiyyəti</span>, hazırlanan açarın,
+                                məlumatın çatdırılacağı istifadəçiyə təhlükəsiz formada çatmasını təmin etməkdir. Həm
+                                şifrələmək, həm də şifrələnmiş mətnin açılması üçün eyni açardan istifadə olunduğuna
+                                görə bu üsula <span class="marker-animation">simmetrik</span> şifrələmə də deyilir. PGP
+                                isə öz daxilində “açıq açar
+                                şifrələməsini” istifadə edir. Məlumatı şifrələmək üçün bir açar (açıq açar), şifrəni
+                                açmaq üçün isə ayrı bir açar (gizli açar) istifadə edilir. Yəni, PGP ilə bir
+                                informasiyanı şifrələyə bilmək üçün bir cüt açıq-gizli açar yaratmaq lazımdır. Açıq
+                                açarı digər istifadəçilərlə paylaşmaq olar. Bu açıq açar vasitəsilə başqaları da,
+                                istifadə edərək informasiyanı şifrələyə və göndərə bilər. Gizli açar ilə isə göndərilən
+                                informasiyanın şifrəsi açılır. PGP-nin istifadə etdiyi alqoritm ilə açıq açardan, gizli
+                                açarın yaradılması mümkün deyildir.
+                            </p>
+                            <div class="img-pgp"></div>
+                            <p>
+                                Bütün açıq açarların sahiblərinin istifadəçi adı və ya e-poçt ünvanı əlaqələndirilmiş
+                                formadadır. PGP-nin ilk versiyalarında “Web of Trust” olaraq bilinən bu sistem daha
+                                sonra “X.509” sistemi ilə dəstəklənişdir. <span class="marker-animation">PGP-də hər
+                                    istifadəçinin bir açıq açarı, bir
+                                    də xüsusi (özəl, gizli) açarı vardır.</span> Açıq açarlar serverlər vasitəsi ilə
+                                paylanılır və
+                                göndərici tərəfin informasiyanı şifrələməsi üçün istifadə olunur, gizli açar isə
+                                istifadəçi tərəfindən məxfi saxlanılır və gələn şifrəli informasiyanı açmaq üçün
+                                istifadə olunur. Ancaq, göndəriləcək informasiya simmetrik açar alqoritmləri ilə
+                                şifrələnir. Bunun səbəbi isə simmetrik açar alqoritmi, açıq açar şifrələmə
+                                alqoritmlərinə nəzərən çox performanslı olmasıdır. Onun üçün bu üsul istifadə olunur.
+                                İstifadə olunun simmetrik açar isə hər dəfə sadəcə bir dəfə istifadə edilir və bu açar
+                                əsas (giriş) açar olaraq adlandırılır. Açıq açar şifrələməsi isə bu əsas açarın alıcıya
+                                təhlükəsiz bir şəkildə çatdırılmasında istifadə olunur.
+                            </p>
+                            <p>
+                                PGP protokolunun istifadə etdiyi alqoritmlərə, <span class="marker-animation">DES və ya
+                                    CAST-128 kimi şifrələmə
+                                    alqoritmlərini</span> misal göstərə bilərik. E-poçt təhlükəsizliyi ilk öncə elektron
+                                poçtun
+                                hədəfə təhlükəsiz formada çatmasını təmin edir. Burdakı təhlükəsizlik anlayışı dedikdə,
+                                məxfilik, tamlıq, identifikasiya təsdiqlənməsi və imtina etmə nəzərdə tutulur. Elektron
+                                poçt mesajlarını aşağıdakı göstərilən müxtəlif növ üsullarla şifrəliyərək qoruya
+                                bilərik:
+                                <ol>
+                                    <li>Elektron poçtun tamlığını təmin etmək və məktub göndərən şəxsin
+                                        identifikasiyasını təsdiqləmək üçün elektron poçt mesajı imzalamaq;</li>
+                                    <li>Məxviliyi təmin etmək üçün elektron poçtun göndərmə sahəsinin əsasını şifrələmə;
+                                    </li>
+                                    <li>Həm elektron poçtun əsasını, həm də elektron poçtun məxviliyini qorumaq üçün
+                                        poçt serverləri arasındakı əlaqəni şifrləmək.</li>
+                                </ol>
+                            </p>
+                            <p>
+                                Yuxarıda da qeyd etdiyimiz kimi, <span class="marker-animation">PGP hibrit bir
+                                    quruluşa</span> sahibdir. Bu quruluş ümumi
+                                olaraq kriptoqrafik funksiyalar, informasiyanın arxivləşdirilərək sıxılması, simmetrik
+                                açar alqoritmləri və açıq açar şifrələməsinin birləşməsindən ibarətdir. Bu üsulla
+                                e-poçta alıcının poçt qutusuna gələnə qədər şifrəlidir və məzmunu digər şəxslərin
+                                istifadəsinə qarşı qorunmuş formadadır.
+                            </p>
+                            <p>
+                                PGP eyni zamanda mesaj şəxsiyyət təsdiq etmə (identifikasiya təsdiqi) və tamlıq
+                                yoxlanışı kimi xidmətlər də təklif edir. PGP blok şifrələmə alqoritmi istifadə etdiyinə
+                                görə, bir yerdən digər yerə mesaj göndərilmə prosesi zamanı mesajda bir bitlik pozulma
+                                və ya dəyişiklik belə olarsa, eyni şifrələmə açarına sahib olan alıcı, şifrəni aça
+                                bilməz. Beləliklə göndərilən mesajda pozulma və ya dəyişiklik olduğu başa düşülür.
+                                Mesajın doğru şəxsdən gəldiyini təmin edən mesaj identifikasiya təsdiqi əməliyyatı isə
+                                <span class="marker-animation">RSA alqoritmi və kriptoqrafik təkrar funksiyasının köməyi
+                                    ilə edilir</span>. Mesajın təkrarı
+                                alındıqdan sonra göndərənin xüsusi açarı ilə RSA alqoritmi daxil edilir. Alıcı tərəfdə
+                                agöndərənin açıq açarı vasitəsilə təsdiqləmə prosesi edər. Fərqli şəxslərdən alınan
+                                mesajlar açar uyğunlaşmamasına görə identifikasiyanı təsdiqləməni təmin edə bilməz. Bu
+                                üsul vasitəsilə normal mesaj identifikasiya təsdiqindən fərqli olaraq, imtina etməmək
+                                xüsusiyyəti də təmin edilmiş olur.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- PGP page main Row end -->
+        </div>
+    </div>
+
+    <div class="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+    <!-- Main JS -->
+    <script src="../js/script.js"></script>
+    <script src="../js/script-parallax.js"></script>
+    <script src="../js/index-marker.js"></script>
+    <script>
+        $('.marker-animation').markerAnimation({
+            color: '#25E39F',
+            font_weight: 'null',
+            thickness: '1em',
+            repeat: true,
+            padding_bottom: '0'
+        });
+    </script>
+
+    <!-- AOS library -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

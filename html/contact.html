@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/contact.css">
+
+    <!-- Fontawesome CDN -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+
+    <!-- AOS library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link rel="icon" href="../img/navbar-icon2.png" sizes="any" type="image/png">
+
+    <title>SecUP | About Information Security on the Internet</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <!-- Row start - Navbar / Main -->
+        <div id="main-row" class="row">
+            <div class="col py-3 main-col">
+
+                <!-- Navbar start -->
+                <nav id="navbar" class="navbar navbar-expand-md bg-white navbar-dark">
+                    <div class="container">
+                        <a class="navbar-brand" href="../index.html">
+                            <img src="../img/navbar-icon2.png" alt="Navbar icon">
+                            <span>SecUP</span>
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="../index.html">Əsas səhifə</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Protokollar
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="pgp.html">PGP</a></li>
+                                        <li><a class="dropdown-item" href="ssl.html">SSL/TLS</a></li>
+                                        <li><a class="dropdown-item" href="ipsec.html">IPsec</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contact.html">Əlaqə</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="login">
+                            <a href="login.html" class="btn login-btn">Giriş et</a>
+                        </div>
+                    </div>
+                </nav>
+                <!-- Navbar end -->
+
+                <!-- Contact page main Row start -->
+                <div class="row contact-main mt-5">
+                    <div class="col">
+                        <div class="contact-content">
+                            <div class="row">
+                                <div class="col-3 d-flex align-items-center">
+                                    <div class="contact-img"></div>
+                                </div>
+                                <div class="col-9 d-flex flex-column" style="text-align: justify;">
+                                    <h3>İnternetin informasiya təhlükəsizliyi protokolları</h3>
+                                    <p>Bu kurs işi, Milli Aviasiya Akademiyasının, Kompüter mühəndisliyi ixtisasının,
+                                        1457a qrup tələbəsi Hümbətov Qara tərəfindən, müəllim Amanov Rəşad rəhbərliyi
+                                        ilə hazırlanmışdır.</p>
+                                    <p>Mövzu, internetin informasiya təhlükəsizliyi protokollarından olan? PGP, SSL/TLS, IPsec növləri haqqında məlumat əldə etmək, öyrədici tipli proqramın yaradılmasından ibarətdir.</p>
+                                    <h5>Əlaqə:</h5>
+                                    <ul class="list-unstyled">
+                                        <li>Telefon: +99455-475-74-71</li>
+                                        <li>Website: <a href="https://humbatovqara.github.io/portfolio">humbatovqara.github.io</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Contact page main Row end -->
+        </div>
+    </div>
+
+    <div class="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+    <!-- Main JS -->
+    <script src="../js/script.js"></script>
+    <script src="../js/script-parallax.js"></script>
+    <script src="../js/index-marker.js"></script>
+    <script>
+        $('.marker-animation').markerAnimation({
+            color: '#25E39F',
+            font_weight: 'null',
+            thickness: '1em',
+            repeat: true,
+            padding_bottom: '0'
+        });
+    </script>
+
+    <!-- AOS library -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

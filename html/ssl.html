@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/ssl.css">
+
+    <!-- Fontawesome CDN -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+
+    <!-- AOS library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link rel="icon" href="../img/navbar-icon2.png" sizes="any" type="image/png">
+
+    <title>SecUP | About Information Security on the Internet</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <!-- Row start - Navbar / Main -->
+        <div id="main-row" class="row">
+            <div class="col py-3 main-col">
+
+                <!-- Navbar start -->
+                <nav id="navbar" class="navbar navbar-expand-md bg-white navbar-dark">
+                    <div class="container">
+                        <a class="navbar-brand" href="../index.html">
+                            <img src="../img/navbar-icon2.png" alt="Navbar icon">
+                            <span>SecUP</span>
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="../index.html">Əsas səhifə</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Protokollar
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="pgp.html">PGP</a></li>
+                                        <li><a class="dropdown-item" href="ssl.html">SSL/TLS</a></li>
+                                        <li><a class="dropdown-item" href="ipsec.html">IPsec</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contact.html">Əlaqə</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="login">
+                            <a href="login.html" class="btn login-btn">Giriş et</a>
+                        </div>
+                    </div>
+                </nav>
+                <!-- Navbar end -->
+
+                <!-- Progress Bar - start -->
+                <progress id="progress" value="0" max="1">
+                    <div class="progress-container">
+                        <span class="progress-bar"></span>
+                    </div>
+                </progress>
+                <!-- Progress Bar - end -->
+
+                <!-- SSL page main Row start -->
+                <div class="row ssl-main">
+                    <div class="col">
+                        <div class="ssl-content">
+                            <h2>SSL/TLS protokolu</h2>
+                            <p>
+                                Bir şirkət internet üzərindən istifadəçilərinin məlumatlarını qorumaq və onları
+                                təhlükəsiz bir formada qorumaqdan məsuldur. <span class="marker-animation">Xüsusilə
+                                    banklar və e-ticarət platformaları
+                                    kimi məxfiliyin və təhlükəsizliyin vacib olduğu veb saytlarında SSL/TLS protokolları
+                                    böyük məna kəsb edir.</span>
+                                <br>
+                                SSL strukturu ilə birlikdə internet üzərində istifadəçi və server arasındakı informasiya
+                                mübadiləsinin şifrəli və təhlükəsiz bir formada edilə bilməsi təmin olunur. SSL
+                                sertifikasiyaları rəqəmsal platformada şirkətlər, qurumlar üçün bir vəsiqə kimidir.
+                                Çünki SSL sertifikasiyaları Sertifikasiya Təşkilatı (Certificate Authority – CA)
+                                tərəfindən yaradılarkən şirkət məlumatları da sertifikasiyanın daxilinə əlavə edilir.
+                                SSL sertifikatlarının funksionallığı və təmin etmiş olduqları xüsusiyyətlə görə
+                                seçimləri var. Bunlar <span class="marker-animation">“Domain Validation – DV”,
+                                    “Organization Validation – OV”, və
+                                    “Extended Validation – EV”</span> olmaq üzrə üç yerə ayrılır.
+                            </p>
+                            <p>
+                                <span class="marker-animation">Domain Validation</span> – strukturunda yaradılan
+                                sertifikat içərisində yalnız istifadə
+                                olunacağı veb saytın URL adresi tapılır və quruma və ya şirkətə aid hər hansı bir
+                                məlumat olmaz. DV tipində bir SSL sertifikastı ilə <span class="marker-animation">yalnız
+                                    URL adresinin doğruluğu
+                                    təsdiqlənə bilər</span>. Daxilində bir nəfər və ya quruma aid məlumat olmadığı üçün
+                                domen
+                                üzərindən SSL sertifikatı istifadə edərək veb saytdan kim xidmət göstərir, kimin veb
+                                saytıdır kimi suallara cavab tapmaq mümkün deyildir. Bu səbəblə çox təhlükəsizliyə
+                                ehtiyac olmayan və bir quruma bağlı olması lazım olmayan veb saytlarda istifadə oluna
+                                bilər.
+                            </p>
+                            <p>
+                                <span class="marker-animation">Organization Validation</span> – quruluşunda yaradılan
+                                sertifikat daxilində “Domain Validation”
+                                quruluşuna əlavə olaraq, şirkət və ya qurum quruluş məlumatları da yazılır. Beləliklə bu
+                                tipdəki bir SSL sertifikatı <span class="marker-animation">həm domen adresinin, yəni URL
+                                    adresinin doğruluğunu
+                                    yoxlayarkən, həm də veb səhifə üzərindən hansı şirkət, qurum xidmət göstərdiyini
+                                    təsdiqlənmiş bir formada göstərir</span>. İnternet üzərindən lazımi məlumatları
+                                alan, işləyən
+                                veb saytlarında ən az OV tipində SSL sertifikatı olmalıdır ki, istifadəçilərində inam
+                                yarada bildin. E-ticarət saytlarında minimum OV tipində bir SSL sertifikatı olmalı,
+                                beləliklə istifadəçilər kimdən məhsul aldığını doğru bir formada öyrənə bilməlidir.
+                            </p>
+                            <p>
+                                <span class="marker-animation">Extended Validation</span> – strukturunda yaradılan
+                                sertifikat ən güclü təsdiqləmə
+                                məlumatlarına sahib SSL sertifikatıdır. Bu sertifikat içərisində <span
+                                    class="marker-animation">domen, şirkət
+                                    məlumatlarının, ardınca sertifikatın alındığı firmaya aid fiziki ünvan
+                                    məlumatları da</span>
+                                vardır. Təhlükəsizlik mənasında bir çox meyarı qarşılayaraq, banklar və e-ticarət
+                                saytları kimi istifadəçidən mühüm məlumatları alan və üzərində əməliyyatlar yerinə
+                                yetirən veb saytlar üçün istifadəsi önəmli olan SSL sertifikat tipidir. Ümumiləşmiş
+                                formada, aşağıdakı cədvələ nəzər yetirə bilərik.
+                            </p>
+                            <div class="img1-ssl"></div>
+                            <p>
+                                Eyni zamanda, SSL sertifikatları veb saytlarına verilərkən, istifadə sahələrinə
+                                görrə
+                                fərqli proseslər yerinə yetirdikləri görünür:
+                                <ol>
+                                    <li>Standart SSL Sertifikatı – yalnız bir ədəd domen hesabın doğruluğunu isbat
+                                        edəcək şəkildə hazırlanan sertifikatdır;</li>
+                                    <li>Multi-Domain SSL Sertifikatı – birdən çox domenin tək bir sertifikat
+                                        daxilində
+                                        tanınmasına imkan verən sertifikat tipidir;
+                                    </li>
+                                    <li>Wilcard SSL Sertifikatı – bütün alt-domenləri əhatə edəcək formada yaradılan
+                                        SSL
+                                        sertifikat tipidir.</li>
+                                </ol>
+                            </p>
+                            <p>
+                                SSL 3.0-da hiss edilən “POODLE Attack” ilə birlikdə SSL protokolu blok şifrələmə
+                                alqoritmləri üçün 2014-cü ildən etibarən təhlükəli qəbul edilmişdir. Yalnız RC4
+                                alqoritmi dəstəklənir, lakin bu alqoritmin də sonlanacağı düşünülür. <span
+                                    class="marker-animation">Bu təhlükəsizlik
+                                    problemlərindən asılı olaraq TLS 1.0, SSL 3.0-ın yerini almışdır. TLS 1.0,
+                                    SSL
+                                    protokolunun yenilənmiş halıdır.</span> Zaman daxilində TLS 1.0 üzərində də bir
+                                çox
+                                təhlükəsizlik yenilənmələri edilmişdir.
+                            </p>
+                            <p>
+                                <span class="marker-animation">SSL (Secure Socket Layer), yeni adı ilə TLS
+                                    (Transport Layer Security) texnologiyası</span>,
+                                istifadəçi və server arasındakı əlaqənin təhlükəsiz və şifrəli bir şəkildə
+                                həyata
+                                keçməsi üçün <span class="marker-animation">simmetrik və asimmetrik</span> şifrələmə
+                                üsullarını istifadə edir.
+                                Təhlükəsiz və
+                                şifrəli əlaqə yalnız bir veb server ilə istifadəçi arasında olmaq
+                                məcburiyyətində
+                                deyildir. Secure E-Mail, VoIP və digər təhlükəli şəbəkə üzərindən edilən
+                                əlaqələr də
+                                yenə SSL/TLS protokolları ilə işlədilərək təhlükəsiz və məxfi hala gətirilə
+                                bilər.
+                                İstifadəçi və server arasında göndərilib-alınan informasiyanın sürətli olması
+                                baxımından
+                                simmetrik şifrələmə üsulu ilə şifrələnməsi daha uyğun hesab edilir. Lakin burada
+                                simmetrik şifrələmə üçün yaradılan xüsusi açarın təhlükəsiz yolla paylaşılması
+                                lazımdır,
+                                eyni zamanda istifadəçi və şəbəkə xaricində, üçüncü bir tərəfin bu xüsusi açarı
+                                ələ
+                                keçirməməsi özənlidir. SSL işlədilən sistemlər üçün “Təhlükəsiz Əlaqənin
+                                Başlanğıcı”
+                                prosesində, simmetrik şifrələmə üçün hazırlanan xüsusi açarların paylaşılması
+                                üçün
+                                asimmetrik şifrələmə üsullarından faydalanmaq və açıq və xüsusi açar cütləri
+                                istifadə
+                                edilməkdədir. <span class="marker-animation">SSL-in işləmə prinsipinin addımları
+                                    aşağıdakı kimidir:</span>
+                                <ul>
+                                    <li>İstifadəçi veb sayta daxil etmək üçün serverə bir sorğu göndərir;</li>
+                                    <li>Server, istifadəçinin bu istəyini asimmetrik açar cütlərindən olan açıq
+                                        açarı,
+                                        sertifikatı göndərərək qarşılıq verir. Bu addımda göndərilən sertifikat
+                                        daxilində şirkətin və ya qurumun, “Sertifikat Təşkilatı” tərəfindən
+                                        təsdiqlənmiş
+                                        məlumatları var. Bu formada istifadəçi serverin hansı quruma aid
+                                        olduğunu
+                                        təsdiqləyə bilir. Eyni zamanda, server tərəfindən göndərilən
+                                        sertifikatın son
+                                        istifadə tarixi, alqoritmi və s. parametrləri yoxlanılaraq sertifikatın
+                                        yararlı
+                                        olub-olmadığnı yoxlayır.</li>
+                                    <li>
+                                        İstifadəçi tərəfindən server ilə informasiya mübadiləsini təhlükəsiz
+                                        yolla
+                                        təmin etmək üçün simmetrik şifrələmə üsulu istifadə olunur və bunun üçün
+                                        bir
+                                        xüsusi açar yaradılır. Bu xüsusi açar serverin açıq açarı ilə
+                                        şifrələnərək
+                                        serverə göndərilir. Serverin açıq açarı ilə şifrələnən informasiya
+                                        yalnız
+                                        serverdə yaradılmış açıq açar dəyərinin qarşılığı olan xüsusi açar ilə
+                                        deşifrə
+                                        oluna bilər.
+                                    </li>
+                                    <li>
+                                        Server tərəfindən xüsusi açar işlədilərək şifrə açılır və informasiyanın
+                                        şifrəli göndərilməsi üçün lazım olan simmetrik şifrələmədə istifadə
+                                        ediləcək
+                                        xüsusi açar əldə edilir.
+                                    </li>
+                                    <li>
+                                        Server ilə istifadəçi arasındakı göndəriləcək bütün məlumatlar bu
+                                        addımdan
+                                        sonra simmetrik şifrələmədə işlədiləcək xüsusi açar ilə şifrələnərək
+                                        göndərilir.
+                                        Bu formada istifadəçi tərəfi veb saytın məzmununu təhlükəsiz şəkildə
+                                        görə bilər
+                                    </li>
+                                </ul>
+                            </p>
+                            <div class="img2-ssl"></div>
+                            <p>
+                                <span class="marker-animation">“TLS Handshake” (TLS təhlükəsiz əlaqə başlanğıcı) prosesi
+                                    SSL prosesindən bir az
+                                    fərqli
+                                    baş verir</span>. “TLS Handshake” prosesləri aşağıdakılardır:
+                                <ul>
+                                    <li>
+                                        İstifadəçi serverə, öz SSL versiyasını, şifrə konfiqurasiyasını, giriş
+                                        məlumatlarını və serverin istifadəçi ilə əlaqələnə bilməsi üçün lazımlı olan
+                                        digər məlumatları göndərir. Həmçinin bu proses server-istifadəçi olmaqla,
+                                        əksinə
+                                        baş verir. Bundan əlavə, server istifadəçiyə sertifikatını da göndərir.
+                                    </li>
+                                    <li>İstifadəçi sertifikat vasitəsilə server məlumatlarını və sertifikatın
+                                        yararlı
+                                        olub-olmadığını təsdiqləyir. Əgər server təsdiqlənə bilməzsə, istifadəçi
+                                        tərəfində şifrələmə və təsdiqləmənin uğurlu olmadığı haqqında bir xəta
+                                        mesajı
+                                        ilə istifadəçi məlumatlandırılır. Əks təqdirdə əməliyyatlar aşağıdakı
+                                        ardıcıllıqla davam edər.</li>
+                                    <li>İstifadəçi giriş üçün ilk yaratdığından fərqli yeni bir gizli informasiya
+                                        (məlumat) yaradır və serverin açıq açarı ilə gizli məlumatı şifrələyərək
+                                        serverə
+                                        göndərir.</li>
+                                    <li>Əgər server istifadəçidən şəxsiyyətini təsdiqləməsini, yəni
+                                        autentifikasiyanı
+                                        istəyərsə, istifadəçi həm öz tərəfindən bilinən, həm də server tərəfindən
+                                        bilinən bir məlumatı imzalayaraq, imzalama etdiyi sertifikatı və ikinci dəfə
+                                        paylaşılan gizli informasiyanı server tərəfinə göndərir.</li>
+                                    <li>Server, ona gələn imzalı informasiyanı təsdiqləməyə çalışır, təsdiqləyə
+                                        bilməzsə
+                                        giriş imkanları sonlandırılır. Təsdiqlənmə uğurlu olarsa, ikinci dəfəki
+                                        göndərilən şifrəli məlumatı, gizli açarı istifadə edərək açar və ardınca
+                                        əsas
+                                        paylaşılacaq məxfi informasiyanı yaradır.</li>
+                                    <li>İstifadəçi və server ikinci məxfi informasiyanı istifadə edərək giriş üçün
+                                        açar
+                                        yaradırlar. Bundan sonrakı addımlarda bu giriş üçün hazırlanan açar istifadə
+                                        edilərək, informasiya şifrələnərək istifadəçi və server arasında təhlükəsiz
+                                        əlaqə qurulmuş olur.</li>
+                                    <li>İstifadəçi və server qarşılıqlı olaraq bir-birlərinə bundan sonra gələcək
+                                        mesajların giriş aşarı ilə şifrələnəcəyini və ardınca isə fərqli bir mesajla
+                                        “handshake” əməliyyatının öz üzərinə düşən hissəsinə ait proseslərin
+                                        bitdiyini
+                                        bildirən mesajlar göndərir.</li>
+                                </ul>
+                            </p>
+                            <div class="img3-ssl"></div>
+                            <p>Yaradılan giriş açarı üzərindən məlumatlar şifrələnərək əlaqə davam edən zaman, iki
+                                tərəfdən birinin istəyi ilə giriş aşarı, yuxarıdakı addımlar təkrar ediləcək formada
+                                yenilənə bilər. Bütün bu proseslər, əməliyyatlar server tərəfindəki istifadəçi
+                                tərəfindən heç hiss edilməz və yalnız veb sayt açılana qədər yuxarıda göstərilən
+                                bütün
+                                proseslər bitmiş olur. <span class="marker-animation">İstifadəçi yalnız brauzerin URL
+                                    bölməsində (ünvan sahəsində),
+                                    veb
+                                    saytın təhlükəsizliyinə dair bir kilid işarəsi və ya təhlükəli olduğuna aid olan bir
+                                    mesaj (Not Secure) görür.</span></p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- PGP page main Row end -->
+        </div>
+    </div>
+
+    <div class="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+    <!-- Main JS -->
+    <script src="../js/script.js"></script>
+    <script src="../js/script-parallax.js"></script>
+    <script src="../js/index-marker.js"></script>
+    <script>
+        $('.marker-animation').markerAnimation({
+            color: '#25E39F',
+            font_weight: 'null',
+            thickness: '1em',
+            repeat: true,
+            padding_bottom: '0'
+        });
+    </script>
+
+    <!-- AOS library -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
