@@ -9,7 +9,7 @@ This was a project I defended when I finished my bachelor's degree. The aim of t
 - [Launch](#launch)
 
 ## Demo
-Here is a working live demo : https://humbatovqara.github.io/login-with-face-recognition/index.html
+Here is a working live demo : https://humbatovqara.github.io/login-with-face-recognition
 
 ## Illustrations
 ![Image 1](https://user-images.githubusercontent.com/60696274/137017312-c13f8ea5-f57f-4985-8318-4db93ba531df.PNG)
