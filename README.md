@@ -33,9 +33,8 @@ Here is a working live demo : https://humbatovqara.github.io/login-with-face-rec
 
 ## Source
 Inspired videos: 
-- https://www.youtube.com/watch?v=CVClHLwv-4I
-- https://www.youtube.com/watch?v=0unx0HxSgSI&t=329s
-
+Engin Demioğ & Mustafa Murat Coşkun - JavaScript lessons
+- https://www.udemy.com/course/komple-sifirdan-web-gelistirme-kursu/
 ## Launch
 ```
 # Clone this repository
