@@ -32,9 +32,10 @@ Here is a working live demo : https://humbatovqara.github.io/login-with-face-rec
 <br />
 
 ## Source
-Inspired videos: 
-Engin Demioğ & Mustafa Murat Coşkun - JavaScript lessons
-- https://www.udemy.com/course/komple-sifirdan-web-gelistirme-kursu/
+Inspired lessons: 
+- https://www.youtube.com/watch?v=CVClHLwv-4I
+- https://www.youtube.com/watch?v=0unx0HxSgSI&t=329s
+
 ## Launch
 ```
 # Clone this repository
