@@ -32,7 +32,7 @@ Here is a working live demo : https://humbatovqara.github.io/login-with-face-rec
 <br />
 
 ## Source
-Inspired lessons: 
+Inspired videos: 
 - https://www.youtube.com/watch?v=CVClHLwv-4I
 - https://www.youtube.com/watch?v=0unx0HxSgSI&t=329s
 
